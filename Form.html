@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Student Register Form</title>
+
+		<style>
+			body{font-family:Tahoma;}
+			.mainDiv{
+				
+				width:100%;
+				border: 5px solid lightpink;
+				background-color:#7FFFD4;
+			}
+
+			.Pad{
+				padding-top:1px;
+			}
+
+			.box{   
+				padding-top:3px;
+				padding-bottom:3px;
+				padding-left:3px;
+				margin-left:5%;
+				width:90%;
+
+			}
+
+			.Text{
+				margin-left:5%;
+			}
+			
+			.rigester{
+				width:92%;
+				color:white;
+				background-color:green;
+				margin-left:5%;
+				width:91%;
+				
+				}
+				
+			
+
+
+
+		</style>
+	</head>
+	<body>
+		<div class="mainDiv">
+			<div style="padding-top:30px; padding-bottom:20px">
+				<p style="text-align:center; font-size:25px;font-family:Tahoma;"><b>Student Registeration Form</b></p>
+			</div>
+			<hr style="margin-left:5%; width:90%;">
+
+			<form action="/www.google.com" autocomplete="on">
+				<div class="Pad" style="padding-top:15px">
+					<label for="fname" class="Text" style="margin-top:25%;">Firstname:</label><br>
+					<input type="text" class="box" id="fname" name="fname" placeholder="Firstname" required>
+				</div><br>
+
+				<div class="Pad">
+					<label for="mname" class="Text">Middlename:</label><br>
+					<input type="text" class="box" id="mname" name="mname" placeholder="Middlename" required>	
+				</div><br>
+
+				<div class="Pad">
+					<label for="lname" class="Text">Lasttname:</label><br>
+					<input type="text" class="box" id="lname" name="lname" placeholder="Lastname" required>
+				</div><br>
+
+				<div class="Pad">
+					<label for="course" class="Text">Course:</label>
+					<select id="course" name="course" required>
+						<option>course</option>
+						<option value="python">Python</option>
+						<option value="java">Java</option>
+						<option value="javscript">Javascript</option>
+						<option value="c++">C++</option>
+					</select>
+				</div><br>
+
+
+				<div class="Pad">
+					<label for="Gender" class="Text">Gender:</label> <br>
+					<input type="radio" class="Text" id="male" name="gender" value="Male"><label for="male">Male</label>
+					<input type="radio" id="famale" name="gender" value="Famale"><label for="famale">Famale</label>
+					<input type="radio" id="other" name="gender" value="Other"><label for="other">Other</label>
+				</div><br>
+
+
+
+				<div style="padding-top:0.5px;">
+					<label for="phone" class="Text">Phone:</label><br>
+					<input type="tel" value="+91" class="box" id="phone" name="phone" >
+				</div><br>
+				<div>
+				<input type="tel" class="box" id="phone no" name="phone no" placeholder="phone no." required>
+				</div><br>
+
+				<div class="Pad">
+					<label for="adress" class="Text">Current Adress:</label><br>
+					<textarea id="adress" class="box" name="adress" placeholder="Current Adress" rows="6"></textarea>
+				</div><br>
+
+				<div class="Pad">
+					<label for="email" class="Text">Email</label><br>
+					<input type="email" class="box" id="email" name="email" placeholder="Enter Email" required>
+				</div><br>
+
+				<div class="Pad">
+					<label for="password" class="Text">Password</label><br>
+					<input type="password" class="box" id="password" name="password" pattern="^(?=.*[0-9])(?=.*[#?!@$%^&*-])(?=.*[A-Za-z]){8}$" placeholder="Enter Password" required>
+				</div><br>
+
+				<div class="Pad">
+					<label for="repassword" class="Text">Re-type Password</label><br>
+					<input type="password" class="box" id="repassword" name="repassword" placeholder="Retype Password">
+				</div><br>
+
+				<div style="padding-bottom:50px">
+					<button type="submit" class="rigester" name="rigester">Rigester</button>
+				</div>
+
+			</form>
+
+		</div>
+
+	</body>
+</html>
